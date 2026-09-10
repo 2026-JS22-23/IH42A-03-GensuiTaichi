@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>google_map_test</title>
+    <link rel="stylesheet" href="public/css/style.css" />
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+</head>
+
+<body>
+    <div id="all">
+        <div id="map"></div>
+        <div id="sidebar">
+            <nav id="nav" class="scroll_box">
+                <ul id="nav_list"></ul>
+            </nav>
+            <hr />
+            <!-- 拠点間矢印の表示切り替え -->
+            <div id="arrow_control">
+                <button type="button" id="arrow_mode_btn" class="location_btn"></button>
+            </div>
+            <!-- 情報表示 -->
+            <div id="statistics">
+                <span id="location_coords"></span>
+                <span id="location_count"></span>
+            </div>
+
+            <!-- 順番に見る用の選択表示 -->
+            <div id="step_location">
+                <button type="button" id="prev_location_btn" class="location_btn">
+                    < </button>
+                        <h3 id="now_location_name"></h3>
+                        <button type="button" id="next_location_btn" class="location_btn">
+                            >
+                        </button>
+            </div>
+            <!-- サムネイル画像（未設定時は自動的に非表示） -->
+            <div id="location_thumbnail_wrap">
+                <img id="location_thumbnail" alt="" />
+            </div>
+            <!-- 場所の説明 -->
+            <div id="location_des">
+                <p id="location_des_text"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- google map api  -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?loading=async&key=%%GOOGLE_MAPS_API_KEY%%&libraries=maps3d"></script>
+    <!-- jquery / jquery ui -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="public/js/common.js"></script>
+</body>
+
+</html>

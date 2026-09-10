@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    cursor: default;
+    font-family: Arial, sans-serif;
+}
+
+hr {
+    margin: 5px 0;
+}
+
+#all {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#map {
+    width: 75%;
+    height: 100vh;
+}
+
+/* ===== サイドバー ===== */
+#sidebar {
+    width: 25%;
+    min-width: 300px;
+    max-height: 100vh;
+    padding: 20px;
+}
+
+/* 縦スクロール可能なボックスの共通スタイル
+   overflow: auto な要素に直接paddingを付けると、スクロール末端側のpaddingが無視されるため、
+   このクラスにはpaddingを持たせず、内側の要素(*_inner等)側でpaddingを確保する */
+.scroll_box {
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-gutter: stable both-edges;
+}
+
+/* 拠点切り替えナビ */
+#nav {
+    width: 100%;
+    height: 200px;
+    margin: 0 0 15px 0;
+}
+
+#nav_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px;
+}
+
+#nav_list li {
+    display: block;
+}
+
+#nav_list li .location_btn {
+    width: 100%;
+}
+
+/* 拠点間矢印の表示切り替え */
+#arrow_control {
+    padding: 0 10px;
+    margin: 0 0 10px 0;
+}
+
+#arrow_control .location_btn {
+    width: 100%;
+}
+
+/* 情報表示（緯度経度・現在ロケーション番号/ロケーション数） */
+#statistics {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* 順番に見る用の選択表示 */
+#step_location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 5px 0;
+}
+
+/* サムネイル画像（img未設定・読み込み失敗時はJS側でwrapごと非表示にする） */
+#location_thumbnail_wrap {
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+#location_thumbnail {
+    display: block;
+    width: 100%;
+    aspect-ratio: 8/5;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* 場所の説明 */
+#location_des {
+    max-height: 300px;
+    margin: 0 0 10px 0;
+}
+
+#location_des_text {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    /* padding: 0 10px; */
+}
+
+/* ===== サイドバー終了 ===== */
+
+.location_btn {
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    outline: 1px solid #eee;
+    color: #111;
+    cursor: pointer;
+}
+
+.location_btn.active {
+    background: #111;
+    color: #fff;
+}

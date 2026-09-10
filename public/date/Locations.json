@@ -1,0 +1,38 @@
+{
+  "science_museum": {
+    "name": "科学館",
+    "des": "プラネタリウムがマジで神だった！　毎回1～2階の展示しか見てない気がするのは私だけ？",
+    "photo": "public/img/science_museum.jpg",
+    "pos": [35.1650768, 136.8997026]
+  },
+  "akanesu_meieki_ring": {
+    "name": "手作りリング",
+    "des": "おそろリング爆誕の地！　思ったより簡単だった？ ...何製なんだろ？　＼(^o^) お手製だろうがよ！",
+    "photo": "public/img/akanesu_meieki_ring.jpg",
+    "pos": [35.1750196, 136.8853226]
+  },
+  "toriken": {
+    "name": "鳥肉屋-鳥健",
+    "des": "冷めチキの入手経路！　また食べに行きたい",
+    "photo": "public/img/toriken.jpg",
+    "pos": [35.098568, 136.8836463]
+  },
+  "nikuno_marusan": {
+    "name": "肉屋-肉のマルサン",
+    "des": "ハムカツおいしおいし　あちあちやった",
+    "photo": "public/img/nikuno_marusan.jpg",
+    "pos": [35.09864826549808, 136.8838092999999]
+  },
+  "hotel_houwa_seminar_plaza": {
+    "name": "ホテル-邦和セミナープラザ",
+    "des": "冷めチキうまかった！　近くにららぽーとある神立地！　今度は連泊したいね　風呂出た後バスタオル回収カゴに入れちゃったからその後困った(´；ω；｀)",
+    "photo": "public/img/hotel_houwa_seminar_plaza.jpg",
+    "pos": [35.1071625, 136.8818373]
+  },
+  "nagoya_port_aquarium": {
+    "name": "名古屋港水族館",
+    "des": "微妙な天気だったけれど館内だったからちょうど良かったよ！　鯨の髭エグかった！　クラゲの展示人気だった！　空いているときにまた行きたいな！　周りの展示とかも見たかったな！",
+    "photo": "public/img/nagoya_port_aquarium.jpg",
+    "pos": [35.0905088, 136.8784377]
+  }
+}
